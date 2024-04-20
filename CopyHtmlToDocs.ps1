@@ -21,6 +21,7 @@ function Copy-Folder {
     }
 }
 
+
 # build/htmlフォルダ内の内容をdocsフォルダにコピーする
 $folderName = Split-Path -Path $MyInvocation.MyCommand.Path -Parent
 # 確認のためカレントフォルダ名をプリント
