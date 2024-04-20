@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="jp" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AHの様々な機能 &mdash; ksyn_addons  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=3ff7d7a7"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Welcome to ksyn_addons&#39;s documentation!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ksyn_addons
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">AHの様々な機能</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#interface">インターフェース</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#all-objects">全体のオブジェクトを配列</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">平面配列</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">グループ配列</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">デフォルに戻すには</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">親のみ移動する</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">グループの連番の基準に文字</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ksyn_addons</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">AHの様々な機能</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ah/機能.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ah">
+<span id="id1"></span><h1>AHの様々な機能<a class="headerlink" href="#ah" title="Link to this heading"></a></h1>
+<img alt="../_images/Images_main.png" src="../_images/Images_main.png" />
+<section id="interface">
+<span id="id2"></span><h2>インターフェース<a class="headerlink" href="#interface" title="Link to this heading"></a></h2>
+<img alt="../_images/interface.png" src="../_images/interface.png" />
+<p>このアドオンはオブジェクト郡のY軸とX軸を基準にオブジェクト郡が等間隔で配列されるアドオンです。</p>
+<p>使用用途して、樽の積み重ね。窓の配列など、
+オブジェクトをアレイモディファイアなどを使わずに
+等間隔で配列したい際に有効なアドオンとなっております。</p>
+</section>
+<section id="all-objects">
+<span id="id3"></span><h2>全体のオブジェクトを配列<a class="headerlink" href="#all-objects" title="Link to this heading"></a></h2>
+<figure class="align-default">
+<a class="controls reference internal image-reference" href="../_images/aH_align_all_objects.mp4"><video controls="controls" height="300" src="../_images/aH_align_all_objects.mp4" title="../_images/aH_align_all_objects.mp4" width="500"><a href="../_images/aH_align_all_objects.mp4">../_images/aH_align_all_objects.mp4</a></video></a>
+</figure>
+<p>全体のオブジェクトを配列するチェックボタンを押すと、
+通常であればグループ毎の（例えば、cube.001 cube.002 とplane.001 plane.002などのグループ）配列が
+統合されて配列されます。</p>
+</section>
+<section id="id4">
+<span id="id5"></span><h2>平面配列<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<figure class="align-default">
+<a class="controls reference internal image-reference" href="../_images/aH_align_gropu_heimen.mp4"><video controls="controls" height="300" src="../_images/aH_align_gropu_heimen.mp4" title="../_images/aH_align_gropu_heimen.mp4" width="500"><a href="../_images/aH_align_gropu_heimen.mp4">../_images/aH_align_gropu_heimen.mp4</a></video></a>
+</figure>
+<p>デフォルトでは立体的にオブジェクトが積み上がりますが、
+このボタンをクリックすると平面上にオブジェクトが配列されます。</p>
+</section>
+<section id="id6">
+<span id="id7"></span><h2>グループ配列<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<figure class="align-default">
+<a class="controls reference internal image-reference" href="../_images/aH_align_group.mp4"><video controls="controls" height="300" src="../_images/aH_align_group.mp4" title="../_images/aH_align_group.mp4" width="500"><a href="../_images/aH_align_group.mp4">../_images/aH_align_group.mp4</a></video></a>
+</figure>
+<p>デフォルトの設定ではオブジェクト名のグループ毎に配列されます。
+（例えば、cube.001 cube.002 とplane.001 plane.002などのグループ）</p>
+<p>配列の幅の基準がオブジェクト郡のX軸とY軸の幅の最大値から算出されます。</p>
+<p>カメラやライトは幅という概念がないので、０ｍとして算出されます。</p>
+</section>
+<section id="id8">
+<span id="id9"></span><h2>デフォルに戻すには<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+<figure class="align-default">
+<a class="controls reference internal image-reference" href="../_images/aH_default.mp4"><video controls="controls" height="300" src="../_images/aH_default.mp4" title="../_images/aH_default.mp4" width="500"><a href="../_images/aH_default.mp4">../_images/aH_default.mp4</a></video></a>
+</figure>
+<p>プロパティの設定をすべて戻したい場合はオペレータープリセットからデフォルトを選んでください。</p>
+<p>オペレータープリセットのオプションを用意してますので、
+お好みの設定があれば設定の保存もここで行えます。</p>
+</section>
+<section id="id10">
+<span id="id11"></span><h2>親のみ移動する<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
+<figure class="align-default">
+<a class="controls reference internal image-reference" href="../_images/aH_parent.mp4"><video controls="controls" height="300" src="../_images/aH_parent.mp4" title="../_images/aH_parent.mp4" width="500"><a href="../_images/aH_parent.mp4">../_images/aH_parent.mp4</a></video></a>
+</figure>
+<p>選択したオブジェクトに親子関係がある場合はこちらのオプションをONにしてもらえば、
+親のみが移動の対象となるので親子関係の位置関係がリセットされません。</p>
+</section>
+<section id="id12">
+<span id="id13"></span><h2>グループの連番の基準に文字<a class="headerlink" href="#id12" title="Link to this heading"></a></h2>
+<img alt="../_images/kijun.png" src="../_images/kijun.png" />
+<figure class="align-default">
+<a class="controls reference internal image-reference" href="../_images/aH_align_kijunn.mp4"><video controls="controls" height="300" src="../_images/aH_align_kijunn.mp4" title="../_images/aH_align_kijunn.mp4" width="500"><a href="../_images/aH_align_kijunn.mp4">../_images/aH_align_kijunn.mp4</a></video></a>
+</figure>
+<p>各グループの連番はデフォルトでは</p>
+<p>.(ピリオド)</p>
+<p>を基準にソートされます。
+例えば、</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Group Name</strong></p></td>
+<td><p><strong>Elements</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Cube Group</p></td>
+<td><p>cube.001
+cube.002</p></td>
+</tr>
+<tr class="row-odd"><td><p>Plane Group</p></td>
+<td><p>plane.001
+plane.002</p></td>
+</tr>
+<tr class="row-even"><td><p>Sphere Group</p></td>
+<td><p>sphere.001
+sphere.002</p></td>
+</tr>
+<tr class="row-odd"><td><p>Camera Group</p></td>
+<td><p>camera.001
+camera.002</p></td>
+</tr>
+</tbody>
+</table>
+<p>この基準から外れると別グループとして認識されます。</p>
+<p><strong>つまり、ピリオドが無いオブジェクト郡は別グループとして認識されます。</strong></p>
+<p>この基準はアドオンのインストール画面で変更できます。</p>
+<p>例えば、設定画面でアンダーバーに変更すると下記のようなグルーピングが可能になります。</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Group Name</strong></p></td>
+<td><p><strong>Elements</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Cube Group</p></td>
+<td><p>cube_001
+cube_002</p></td>
+</tr>
+<tr class="row-odd"><td><p>Plane Group</p></td>
+<td><p>plane_001
+plane_002</p></td>
+</tr>
+<tr class="row-even"><td><p>Sphere Group</p></td>
+<td><p>sphere_001
+sphere_002</p></td>
+</tr>
+<tr class="row-odd"><td><p>Camera Group</p></td>
+<td><p>camera_001
+camera_002</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to ksyn_addons&#39;s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, ksyn.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
