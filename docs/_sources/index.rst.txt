@@ -9,6 +9,8 @@ Welcome to ksyn_addons's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
+   /ah/機能
 
 
 
