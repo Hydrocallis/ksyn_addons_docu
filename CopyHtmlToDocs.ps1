@@ -26,6 +26,8 @@ $folderName = Split-Path -Path $MyInvocation.MyCommand.Path -Parent
 # 確認のためカレントフォルダ名をプリント
 Write-Host "Current folder name: $folderName"
 Copy-Folder -SourceFolder "$folderName\build\html" -DestinationFolder "$folderName\docs"
+Write-Host "Copy-Folder  name: $folderName\build\html"
+Write-Host "past-Folder  name: $folderName\doc"
 
 
 # .nojekyllファイルをdocsフォルダに作成する
