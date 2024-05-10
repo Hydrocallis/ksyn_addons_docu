@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="jp" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solid Color Materialの様々な機能 &mdash; ksyn_addons  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="AHの様々な機能" href="../ah/%E6%A9%9F%E8%83%BD.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> ksyn_addons
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ah/%E6%A9%9F%E8%83%BD.html">AHの様々な機能</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Solid Color Materialの様々な機能</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#scm-demo1">基本的な使い方</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scm-demo2">カラーの履歴機能（フォルダを参照）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scm-preference">アドオンの設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">更新履歴</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ksyn_addons</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Solid Color Materialの様々な機能</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/scm/機能.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="solid-color-material">
+<span id="scm"></span><h1>Solid Color Materialの様々な機能<a class="headerlink" href="#solid-color-material" title="Permalink to this heading"></a></h1>
+<p>■機能■
+本アドオンでは
+選択したオブジェクトに対して、指定の色のマテリアルが「テクスチャ」として追加されます。</p>
+<p>通常のマテリアル設定だとUNITYやクリスタでは色味がガンマ値補正で違ったりするのですがこのアドオンでは直にイメージの色のテクスチャを割り当ててるだけですのでブレンダー上の色でも問題なくクリスタやUNITYで表示されます。</p>
+<p>※余談
+本アドオンとは関係ありませんが、
+ガンマ値の計算は
+<a class="reference external" href="https://en.wikipedia.org/wiki/SRGB">https://en.wikipedia.org/wiki/SRGB</a>
+のウィキペディアが詳しいです。
+とりあえずブレンダー上のマテリアルの色（Principled (プリンシプル) のベースカラー）が他のソフトでは互換性が無いと思っていて下さい。</p>
+<p>■用途■
+「とりあえず、UV展開するまでもなく画像の色指定だけしたい」
+「一部のメッシュの色を指定して決めたい」
+などの用途にとても便利です。</p>
+<p>■非常に軽量■
+テクスチャは1Pixelですので、軽量になっております。</p>
+<p>■履歴機能■
+また、履歴機能もパネルも別途追加してますので、パネルの方からテクスチャやマテリアル（同名で既に使用してる色がブレンダーにあればそれが再利用されます。）</p>
+<section id="scm-demo1">
+<span id="id1"></span><h2>基本的な使い方<a class="headerlink" href="#scm-demo1" title="Permalink to this heading"></a></h2>
+<figure class="align-default">
+<a class="controls reference internal image-reference" href="../_images/scm_demo1.gif"><img alt="../_images/scm_demo1.gif" class="controls" src="../_images/scm_demo1.gif" style="width: 500px;" /></a>
+</figure>
+<p>オブジェクトモードだと選択下オブジェクトの前メッシュにマテリアルが適応されます。
+エディットモードですと、選択したメッシュに指定した色のマテリアルが適応されます。</p>
+</section>
+<section id="scm-demo2">
+<span id="id2"></span><h2>カラーの履歴機能（フォルダを参照）<a class="headerlink" href="#scm-demo2" title="Permalink to this heading"></a></h2>
+<figure class="align-default">
+<a class="controls reference internal image-reference" href="../_images/scm_demo2.gif"><img alt="../_images/scm_demo2.gif" class="controls" src="../_images/scm_demo2.gif" style="width: 500px;" /></a>
+</figure>
+<p>この機能では別のパネルに過去に使用したカラーが表示されます。
+クリックしていだければ過去の色を新しく作ることなく
+再利用できます。</p>
+<p>過去に使用したカラーテクスチャ（1Pixelの）はデフォルトでは
+ブレンダーファイルのあるフォルダのTextureのフォルダに格納されます。</p>
+<p>アドオンの設定画面で、テクスチャの保存先や保存フォルダ名は変更できます。</p>
+<p>詳しくは
+<a class="reference internal" href="#scm-preference"><span class="std std-ref">アドオンの設定</span></a>
+参照。</p>
+</section>
+<section id="scm-preference">
+<span id="id3"></span><h2>アドオンの設定<a class="headerlink" href="#scm-preference" title="Permalink to this heading"></a></h2>
+<img alt="../_images/scm_demo3.gif" src="../_images/scm_demo3.gif" />
+<p>デフォルのテクスチャの保存先の名前を変更できます。</p>
+<img alt="../_images/scm_addon_pre.jpg" src="../_images/scm_addon_pre.jpg" />
+<p>どのブレンダーアドオンでも同じフォルダを使いたい場合は
+「テクスチャの保存先を変える」をクリックして
+任意の保存先を指定して下さい。</p>
+</section>
+<section id="id4">
+<span id="id5"></span><h2>更新履歴<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
+<p>2024-05-10　Solid_color_material_v1_0_0.zipリリース</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../ah/%E6%A9%9F%E8%83%BD.html" class="btn btn-neutral float-left" title="AHの様々な機能" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, ksyn.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

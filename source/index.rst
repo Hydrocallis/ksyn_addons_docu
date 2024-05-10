@@ -11,6 +11,8 @@ Welcome to ksyn_addons's documentation!
    :caption: Contents:
    
    /ah/機能
+   
+   /scm/機能
 
 
 
